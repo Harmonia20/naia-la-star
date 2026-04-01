@@ -232,7 +232,8 @@ img {
   letter-spacing: 0.28em;
   color: var(--white);
   opacity: 0.92;
-  margin-top: -12px;
+  margin-top: -50px;
+  margin-bottom: 40px;
   text-align: center;
   display: block;
   width: 100%;
