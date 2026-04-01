@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merci — Naïa La Star</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=DM+Sans:wght@300;400;500;600&family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .merci__btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 32px;
+        border-radius: var(--r-sm);
+        font-family: var(--font-body);
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: var(--white);
+        background: linear-gradient(135deg, var(--pink) 0%, var(--violet) 100%);
+        box-shadow: 0 8px 32px rgba(255, 47, 178, 0.4);
+        transition:
+          transform 180ms ease,
+          box-shadow 180ms ease;
+      }
+      .merci__btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 16px 48px rgba(255, 47, 178, 0.55);
+      }
+      .merci__social {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        color: var(--pink2);
+        border-bottom: 1px solid rgba(255, 111, 216, 0.3);
+        padding-bottom: 2px;
+        transition: opacity 180ms ease;
+      }
+      .merci__social:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        background:
+          radial-gradient(
+            ellipse 80% 80% at 70% 50%,
+            rgba(139, 30, 245, 0.55) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 60% 60% at 20% 80%,
+            rgba(255, 47, 178, 0.25) 0%,
+            transparent 55%
+          ),
+          linear-gradient(160deg, #2d0a52 0%, #1a0533 100%);
+      "
+    ></div>
+
+    <main
+      style="
+        position: relative;
+        z-index: 1;
+        min-height: 100svh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 24px;
+      "
+    >
+      <div
+        style="
+          max-width: 480px;
+          width: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        "
+      >
+        <h1
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1;
+          "
+        >
+          <span
+            style="
+              font-family: var(--font-script);
+              font-size: clamp(90px, 12vw, 160px);
+              background: linear-gradient(
+                135deg,
+                #ff6fd8 0%,
+                #ff2fb2 40%,
+                #d36cff 80%,
+                #8b1ef5 100%
+              );
+              -webkit-background-clip: text;
+              background-clip: text;
+              color: transparent;
+              filter: drop-shadow(0 0 30px rgba(255, 47, 178, 0.4));
+              line-height: 1.2;
+              display: block;
+            "
+            >Naïa</span
+          >
+          <span
+            style="
+              font-family: var(--font-display);
+              font-weight: 900;
+              font-size: clamp(18px, 3vw, 32px);
+              letter-spacing: 0.28em;
+              color: var(--white);
+              opacity: 0.92;
+              margin-top: -28px;
+              display: block;
+            "
+            >LA STAR</span
+          >
+        </h1>
+
+        <p
+          style="
+            font-family: var(--font-display);
+            font-size: clamp(26px, 4vw, 40px);
+            font-weight: 900;
+            color: var(--white);
+            margin-top: 16px;
+          "
+        >
+          Merci&nbsp;! 🥰
+        </p>
+
+        <p
+          style="
+            font-size: 16px;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.65);
+          "
+        >
+          Ton message a bien été envoyé.<br />
+          Naïa ou son équipe te répondra dès que possible&nbsp;!
+        </p>
+
+        <a href="index.html" class="merci__btn">Retour à l'accueil ✦</a>
+
+        <div style="display: flex; gap: 24px; justify-content: center">
+          <a
+            href="https://www.tiktok.com/@naia_la_star"
+            target="_blank"
+            rel="noopener"
+            class="merci__social"
+            >TikTok</a
+          >
+          <a
+            href="https://www.instagram.com/naia_la_star/"
+            target="_blank"
+            rel="noopener"
+            class="merci__social"
+            >Instagram</a
+          >
+          <a
+            href="https://www.youtube.com/@naia_ytb"
+            target="_blank"
+            rel="noopener"
+            class="merci__social"
+            >YouTube</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" style="position: relative; z-index: 1">
+      <div class="footer__inner">
+        <p>
+          © <span id="year"></span> Naïa La Star —
+          <a href="mentions-legales.html">Mentions légales</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

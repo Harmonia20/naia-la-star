@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naïa La Star — Collaborations & Partenariats</title>
+    <meta
+      name="description"
+      content="Collaborez avec Naïa La Star, créatrice de contenus lifestyle. 557k abonnés TikTok."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=DM+Sans:wght@300;400;500;600&family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav" id="siteNav">
+      <a class="nav__brand" href="#accueil">@naia_la_star</a>
+      <div class="nav__links">
+        <a href="#chiffres">Stats</a>
+        <a href="#univers">Univers</a>
+        <a href="#contact" class="nav__cta">Collaborer</a>
+      </div>
+    </header>
+
+    <section id="accueil" class="hero">
+      <div class="hero__bg"></div>
+
+      <div class="hero__left">
+        <p class="hero__eyebrow">Créatrice de contenu lifestyle</p>
+
+        <h1 class="hero__name">
+          <span class="hero__name-script">Naïa</span>
+          <span class="hero__name-bold">LA STAR</span>
+        </h1>
+
+        <p class="hero__tagline">
+          GRWM, tendances & playbacks.<br />
+          La vraie vie qui scrolle toute seule.
+        </p>
+
+        <a href="#contact" class="hero__btn">Proposer une collab ✦</a>
+      </div>
+
+      <div class="hero__right">
+        <div class="hero__photo-wrap">
+          <img
+            class="hero__photo"
+            src="images/photo-naia.png"
+            alt="Naïa La Star"
+            onerror="this.style.opacity = '0'"
+          />
+          <div class="hero__photo-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chiffres" class="stats">
+      <div class="stats__inner">
+        <div class="stats__item">
+          <span class="stats__num">557 900</span>
+          <span class="stats__label">abonnés TikTok</span>
+          <a
+            href="https://www.tiktok.com/@naia_la_star"
+            target="_blank"
+            rel="noopener"
+            class="stats__link"
+            >Voir TikTok →</a
+          >
+        </div>
+        <div class="stats__sep" aria-hidden="true"></div>
+        <div class="stats__item">
+          <span class="stats__num">28 000</span>
+          <span class="stats__label">abonnés Instagram</span>
+          <a
+            href="https://www.instagram.com/naia_la_star/"
+            target="_blank"
+            rel="noopener"
+            class="stats__link"
+            >Voir Instagram →</a
+          >
+        </div>
+        <div class="stats__sep" aria-hidden="true"></div>
+        <div class="stats__item">
+          <span class="stats__num">12 000</span>
+          <span class="stats__label">abonnés YouTube</span>
+          <a
+            href="https://www.youtube.com/@naia_ytb"
+            target="_blank"
+            rel="noopener"
+            class="stats__link"
+            >Voir YouTube →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="univers" class="univers">
+      <div class="univers__inner">
+        <div class="univers__photo-col">
+          <div class="univers__photo-wrap">
+            <img
+              src="images/photo-naia-2.png"
+              alt="Naïa en action"
+              class="univers__photo"
+              onerror="this.style.opacity = '0'"
+            />
+          </div>
+        </div>
+
+        <div class="univers__content">
+          <p class="univers__overtitle">À propos</p>
+          <h2 class="univers__title">
+            La créatrice qui<br /><em>te fait scroller</em>
+          </h2>
+          <p class="univers__text">
+            Je suis <strong class="signature">Naïa</strong> , créatrice
+            lifestyle sur TikTok, Instagram et YouTube.
+          </p>
+          <p class="univers__text">
+            Des contenus simples, spontanés : des looks, des moments de vie et
+            ce qui me fait kiffer en ce moment.
+          </p>
+          <div class="univers__tags">
+            <span>✦ Lifestyle</span>
+            <span>✦ Mode & beauté</span>
+            <span>✦ Try-on & haul</span>
+            <span>✦ Tendances TikTok</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact__inner">
+        <div class="contact__head">
+          <p class="contact__overtitle">Travaillons ensemble</p>
+          <h2 class="contact__title">Une idée<br />de collab ?</h2>
+          <p class="contact__sub">Collabs, placements produits, événements…</p>
+        </div>
+
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="contact__form"
+          id="contactForm"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="contact__grid">
+            <label class="contact__field">
+              <span>Ta marque</span>
+              <input
+                required
+                type="text"
+                name="marque"
+                placeholder="Ex : MyBrand"
+              />
+            </label>
+            <label class="contact__field">
+              <span>Ton email</span>
+              <input
+                required
+                type="email"
+                name="email"
+                placeholder="contact@marque.com"
+              />
+            </label>
+          </div>
+          <label class="contact__field">
+            <span>Ta proposition</span>
+            <textarea
+              required
+              name="message"
+              rows="5"
+              placeholder="Produit, idée de contenu, budget…"
+            ></textarea>
+          </label>
+          <button class="contact__btn" type="submit">
+            Envoyer ma demande ✦
+          </button>
+          <p class="contact__hint">
+            Envoyé directement à <strong>contact@naialastar.com</strong>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>
+          © <span id="year"></span> Naïa La Star —
+          <a href="mentions-legales.html">Mentions légales</a>
+        </p>
+        <div class="footer__links">
+          <a
+            href="https://www.tiktok.com/@naia_la_star"
+            target="_blank"
+            rel="noopener"
+            >TikTok</a
+          >
+          <a
+            href="https://www.instagram.com/naia_la_star/"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+          <a
+            href="https://www.youtube.com/@naia_ytb"
+            target="_blank"
+            rel="noopener"
+            >YouTube</a
+          >
+        </div>
+        <a href="#accueil">Revenir en haut ↑</a>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

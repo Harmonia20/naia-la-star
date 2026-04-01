@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions légales — Naïa La Star</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&family=DM+Sans:wght@300;400;500;600&family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .mentions__card {
+        max-width: 720px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--r-lg);
+        padding: 56px;
+        backdrop-filter: blur(10px);
+      }
+      .mentions__card h1 {
+        font-family: var(--font-display);
+        font-size: clamp(28px, 4vw, 42px);
+        font-weight: 900;
+        color: var(--white);
+        margin-bottom: 40px;
+      }
+      .mentions__card h2 {
+        font-family: var(--font-display);
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--pink2);
+        margin: 32px 0 10px;
+        letter-spacing: 0.04em;
+      }
+      .mentions__card p {
+        font-size: 15px;
+        line-height: 1.75;
+        color: rgba(255, 255, 255, 0.65);
+      }
+      .mentions__card a {
+        color: var(--pink2);
+        border-bottom: 1px solid rgba(255, 111, 216, 0.3);
+        padding-bottom: 1px;
+        transition: opacity 180ms ease;
+      }
+      .mentions__card a:hover {
+        opacity: 0.8;
+      }
+      .mentions__back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 40px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        color: var(--pink2);
+        border-bottom: 1px solid rgba(255, 111, 216, 0.3);
+        padding-bottom: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        background:
+          radial-gradient(
+            ellipse 80% 80% at 70% 50%,
+            rgba(139, 30, 245, 0.55) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 60% 60% at 20% 80%,
+            rgba(255, 47, 178, 0.25) 0%,
+            transparent 55%
+          ),
+          linear-gradient(160deg, #2d0a52 0%, #1a0533 100%);
+      "
+    ></div>
+
+    <main
+      style="
+        position: relative;
+        z-index: 1;
+        min-height: 100svh;
+        padding: 80px 24px;
+      "
+    >
+      <div class="mentions__card">
+        <h1>Mentions légales</h1>
+
+        <h2>Éditeur du site</h2>
+        <p>Site édité sous la responsabilité d'un représentant légal.</p>
+        <p>
+          Contact :
+          <a href="mailto:contact@naialastar.com">contact@naialastar.com</a
+          ><br />
+          Pays : France
+        </p>
+
+        <h2>Hébergement</h2>
+        <p>
+          Netlify, Inc.<br />
+          San Francisco, États-Unis
+        </p>
+
+        <h2>Données personnelles</h2>
+        <p>
+          Les informations transmises via le formulaire de contact sont
+          utilisées uniquement pour répondre aux messages reçus.
+        </p>
+
+        <a href="./index.html" class="mentions__back">← Retour au site</a>
+      </div>
+    </main>
+
+    <footer class="footer" style="position: relative; z-index: 1">
+      <div class="footer__inner">
+        <p>© <span id="year"></span> Naïa La Star</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
